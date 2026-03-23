@@ -653,6 +653,229 @@
     width: 20px;
     height: 20px;
   }
+
+  /* ===== AUTH & USER MENU ===== */
+  .user-auth-btn {
+    cursor: pointer; display: flex; align-items: center; gap: 6px;
+    background: none; border: 1px solid var(--border); border-radius: 20px;
+    color: var(--text-dim); font-size: 12px; padding: 6px 14px;
+    transition: all 0.2s;
+  }
+  .user-auth-btn:hover { border-color: var(--accent); color: var(--text); }
+  .user-auth-btn svg { width: 14px; height: 14px; }
+  .user-avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--accent); color: #fff; font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; position: relative; border: none;
+  }
+  .user-menu {
+    position: absolute; top: 42px; right: 0;
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 6px 0; min-width: 140px; z-index: 200;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    display: none;
+  }
+  .user-menu.open { display: block; }
+  .user-menu-item {
+    display: block; width: 100%; padding: 10px 16px;
+    background: none; border: none; color: var(--text);
+    font-size: 13px; text-align: left; cursor: pointer;
+  }
+  .user-menu-item:hover { background: rgba(108,92,231,0.15); }
+
+  /* ===== AUTH MODAL ===== */
+  .auth-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    z-index: 300; justify-content: center; align-items: center;
+  }
+  .auth-overlay.open { display: flex; }
+  .auth-box {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
+    padding: 36px; width: 360px; max-width: 90vw; position: relative;
+  }
+  .auth-title { font-size: 20px; font-weight: 700; margin-bottom: 6px; color: var(--text-primary); }
+  .auth-subtitle { font-size: 13px; color: var(--text-dim); margin-bottom: 24px; }
+  .auth-input {
+    width: 100%; height: 44px; padding: 0 14px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    color: var(--text); font-size: 14px; outline: none; margin-bottom: 12px;
+    transition: border-color 0.2s;
+  }
+  .auth-input:focus { border-color: var(--accent); }
+  .auth-btn {
+    width: 100%; height: 44px; border: none; border-radius: 8px;
+    background: var(--accent); color: #fff; font-size: 14px; font-weight: 600;
+    cursor: pointer; margin-top: 4px; transition: opacity 0.2s;
+  }
+  .auth-btn:hover { opacity: 0.85; }
+  .auth-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .auth-switch {
+    text-align: center; margin-top: 16px; font-size: 13px; color: var(--text-dim);
+  }
+  .auth-switch a {
+    color: var(--accent); cursor: pointer; text-decoration: none;
+  }
+  .auth-switch a:hover { text-decoration: underline; }
+  .auth-error {
+    background: rgba(255,45,45,0.1); border: 1px solid rgba(255,45,45,0.3);
+    color: #ff6b6b; font-size: 12px; padding: 8px 12px; border-radius: 8px;
+    margin-bottom: 12px; display: none;
+  }
+  .auth-close {
+    position: absolute; top: 12px; right: 12px; width: 32px; height: 32px;
+    border-radius: 50%; border: none; background: rgba(255,255,255,0.08);
+    color: var(--text-dim); font-size: 16px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .auth-close:hover { background: rgba(255,255,255,0.15); }
+
+  /* ===== CARD BOOKMARK ===== */
+  .card-bookmark {
+    position: absolute; top: 10px; right: 10px; z-index: 5;
+    width: 36px; height: 36px; border-radius: 50%;
+    background: rgba(0,0,0,0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    border: none; color: #fff; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transform: scale(0.8);
+    transition: opacity 0.2s, transform 0.2s, background 0.2s;
+  }
+  .card:hover .card-bookmark { opacity: 1; transform: scale(1); }
+  .card-bookmark.is-saved {
+    opacity: 1; transform: scale(1);
+    background: var(--accent); color: #fff;
+  }
+  .card-bookmark:hover { background: var(--accent); }
+  .card-bookmark svg { width: 16px; height: 16px; }
+  .card { position: relative; }
+
+  /* ===== MODAL COLLECT BUTTON ===== */
+  .modal-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .modal-collect-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 10px 20px; border-radius: 8px;
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text); font-size: 13px; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .modal-collect-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .modal-collect-btn.is-saved { border-color: var(--accent); color: var(--accent); }
+  .modal-collect-btn svg { width: 14px; height: 14px; }
+
+  /* ===== BOARD POPUP ===== */
+  .board-popup {
+    position: fixed; z-index: 250;
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; min-width: 220px; max-width: 280px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    display: none;
+  }
+  .board-popup.open { display: block; }
+  .board-popup-title { font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-dim); }
+  .board-popup-list { max-height: 200px; overflow-y: auto; }
+  .board-popup-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px; border-radius: 8px; cursor: pointer;
+    font-size: 13px; color: var(--text); transition: background 0.15s;
+  }
+  .board-popup-item:hover { background: rgba(108,92,231,0.12); }
+  .board-popup-item.active { color: var(--accent); }
+  .board-popup-item .check { width: 16px; text-align: center; }
+  .board-popup-new {
+    display: flex; gap: 6px; margin-top: 8px; padding-top: 8px;
+    border-top: 1px solid var(--border);
+  }
+  .board-popup-new input {
+    flex: 1; height: 32px; padding: 0 10px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+    color: var(--text); font-size: 12px; outline: none;
+  }
+  .board-popup-new input:focus { border-color: var(--accent); }
+  .board-popup-new button {
+    height: 32px; padding: 0 12px; border: none; border-radius: 6px;
+    background: var(--accent); color: #fff; font-size: 12px; cursor: pointer;
+  }
+
+  /* ===== COLLECTION VIEW ===== */
+  .collection-view { max-width: 1200px; margin: 20px auto 40px; padding: 0 40px; }
+  .collection-header {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 24px;
+  }
+  .collection-back {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--tag-bg); border: none; color: var(--text);
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+  }
+  .collection-back:hover { background: var(--accent); color: #fff; }
+  .collection-back svg { width: 18px; height: 18px; }
+  .collection-title { font-size: 22px; font-weight: 700; }
+  .board-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  .board-card {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+    overflow: hidden; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+  .board-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+  .board-card-cover {
+    width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; background: #111;
+  }
+  .board-card-body { padding: 14px 16px; }
+  .board-card-name { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .board-card-count { font-size: 12px; color: var(--text-dim); }
+  .board-card-actions {
+    position: absolute; top: 8px; right: 8px;
+    display: flex; gap: 4px; opacity: 0; transition: opacity 0.2s;
+  }
+  .board-card:hover .board-card-actions { opacity: 1; }
+  .board-action-btn {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: rgba(0,0,0,0.6); border: none; color: #fff;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+  .board-action-btn:hover { background: var(--accent); }
+  .board-card-new {
+    border: 2px dashed var(--border); display: flex;
+    flex-direction: column; align-items: center; justify-content: center;
+    min-height: 180px; color: var(--text-dim); gap: 8px;
+  }
+  .board-card-new:hover { border-color: var(--accent); color: var(--accent); }
+  .board-card-new svg { width: 32px; height: 32px; }
+
+  .collection-empty {
+    text-align: center; padding: 80px 20px; color: var(--text-dim);
+  }
+  .collection-empty-icon { font-size: 48px; margin-bottom: 12px; }
+  .collection-empty-text { font-size: 15px; margin-bottom: 16px; }
+  .collection-login-btn {
+    display: inline-block; padding: 10px 28px; border-radius: 8px;
+    background: var(--accent); color: #fff; font-size: 14px;
+    cursor: pointer; border: none; font-weight: 600;
+  }
+  .collection-login-btn:hover { opacity: 0.85; }
+
+  /* ===== TOAST ===== */
+  .toast {
+    position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 24px; font-size: 13px; color: var(--text);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4); z-index: 400;
+    opacity: 0; transition: opacity 0.3s, transform 0.3s; pointer-events: none;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 960px) {
+    .board-grid { grid-template-columns: repeat(2, 1fr); }
+    .collection-view { padding: 0 20px; }
+  }
+  @media (max-width: 600px) {
+    .board-grid { grid-template-columns: 1fr; }
+    .collection-view { padding: 0 16px; }
+    .auth-box { padding: 24px; }
+  }
 </style>
 </head>
 <body>
@@ -678,6 +901,12 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
     GitHub
   </a>
+  <div id="authArea">
+    <button class="user-auth-btn" id="loginBtn" onclick="showAuthModal()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      登录
+    </button>
+  </div>
 </div>
 
 <!-- Hero -->
@@ -725,6 +954,7 @@
     <div class="seg-slider" id="segSlider"></div>
     <button class="seg-btn is-active" data-view="svg">SVG交互案例</button>
     <button class="seg-btn" data-view="longform">长图设计</button>
+    <button class="seg-btn" data-view="collection">我的收藏</button>
   </div>
   <div class="toolbar-actions">
     <select id="sortSelect">
@@ -831,6 +1061,7 @@
 <div class="stats" id="stats"></div>
 <div class="grid" id="grid"></div>
 <div class="masonry hidden" id="masonry"></div>
+<div class="collection-view hidden" id="collectionView"></div>
 
 <!-- Modal -->
 <div class="modal-overlay" id="modalOverlay">
@@ -842,7 +1073,13 @@
       <div class="modal-meta" id="modalMeta"></div>
       <div class="modal-tags" id="modalTags"></div>
       <div class="modal-review" id="modalReview"></div>
-      <a class="modal-link" id="modalLink" href="#" target="_blank">查看原文</a>
+      <div class="modal-actions">
+        <a class="modal-link" id="modalLink" href="#" target="_blank">查看原文</a>
+        <button class="modal-collect-btn" id="modalCollect" onclick="handleModalCollect()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          <span>收藏</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -865,10 +1102,54 @@
 
 </div><!-- /main-content -->
 
+<!-- Auth Modal -->
+<div class="auth-overlay" id="authOverlay">
+  <div class="auth-box">
+    <button class="auth-close" onclick="closeAuthModal()">&times;</button>
+    <div class="auth-title" id="authTitle">登录</div>
+    <div class="auth-subtitle" id="authSubtitle">登录后即可收藏案例到看板</div>
+    <div class="auth-error" id="authError"></div>
+    <input class="auth-input" type="email" id="authEmail" placeholder="邮箱地址">
+    <input class="auth-input" type="password" id="authPassword" placeholder="密码">
+    <button class="auth-btn" id="authSubmit" onclick="handleAuth()">登录</button>
+    <div class="auth-switch" id="authSwitch">
+      还没有账号？<a onclick="toggleAuthMode()">注册</a>
+    </div>
+  </div>
+</div>
+
+<!-- Board Selector Popup -->
+<div class="board-popup" id="boardPopup">
+  <div class="board-popup-title">选择看板</div>
+  <div class="board-popup-list" id="boardPopupList"></div>
+  <div class="board-popup-new">
+    <input type="text" id="boardNewName" placeholder="新建看板...">
+    <button onclick="createBoardFromPopup()">创建</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
 <footer class="site-footer">
   <span>不睡觉Club SVG交互案例库</span>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script>
+firebase.initializeApp({
+  apiKey: "AIzaSyDsCTgw3rE_b8cV_B-5nI0U6muutUOXUBY",
+  authDomain: "svg-case-library.firebaseapp.com",
+  projectId: "svg-case-library",
+  storageBucket: "svg-case-library.firebasestorage.app",
+  messagingSenderId: "1065789649781",
+  appId: "1:1065789649781:web:068e8f5c711922a55dd93c"
+});
+var db = firebase.firestore();
+var auth = firebase.auth();
+</script>
 <script src="cases.js"></script>
 <script>
 
@@ -908,6 +1189,16 @@ var searchQuery = '';
 var sortMode = 'publish_desc';
 var currentView = 'svg';
 
+/* === Collection State === */
+var _currentUser = null;
+var _savedMap = {};    // { caseId: boardId }
+var _boards = [];      // [{ id, name, caseIds, createdAt }]
+var _authMode = 'login';
+var _pendingSave = null;
+var _currentModalCaseId = null;
+var _viewingBoardId = null;
+var _boardPopupCaseId = null;
+
 /* === Loading === */
 function dismissLoader() {
   var loader = document.getElementById('loader');
@@ -943,16 +1234,24 @@ function switchView(view) {
   var filterRows = document.querySelectorAll('.filter-row');
   var svgOnlyDims = ['effect', 'occasion', 'developer'];
 
+  var collection = document.getElementById('collectionView');
+  var filterArea = document.getElementById('filters');
+  var toolbarActions = document.querySelector('.toolbar-actions');
+
   if (view === 'svg') {
     grid.classList.remove('hidden');
     masonry.classList.add('hidden');
+    collection.classList.add('hidden');
     filterRows.forEach(function(r) { r.style.display = ''; });
     document.getElementById('effectSub').style.display = '';
     document.getElementById('styleSub').style.display = '';
+    filterArea.style.display = '';
+    toolbarActions.style.display = '';
     render();
-  } else {
+  } else if (view === 'longform') {
     grid.classList.add('hidden');
     masonry.classList.remove('hidden');
+    collection.classList.add('hidden');
     filterRows.forEach(function(r) {
       if (svgOnlyDims.indexOf(r.dataset.dimension) !== -1) {
         r.style.display = 'none';
@@ -962,7 +1261,17 @@ function switchView(view) {
     });
     document.getElementById('effectSub').style.display = 'none';
     document.getElementById('styleSub').style.display = '';
+    filterArea.style.display = '';
+    toolbarActions.style.display = '';
     renderLongform();
+  } else if (view === 'collection') {
+    grid.classList.add('hidden');
+    masonry.classList.add('hidden');
+    collection.classList.remove('hidden');
+    filterArea.style.display = 'none';
+    toolbarActions.style.display = 'none';
+    _viewingBoardId = null;
+    renderCollectionView();
   }
 }
 
@@ -1326,7 +1635,7 @@ function init() {
   });
 
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') { closeModal(); closeLongformModal(); }
+    if (e.key === 'Escape') { closeModal(); closeLongformModal(); closeAuthModal(); closeBoardPopup(); }
   });
 }
 
@@ -1482,6 +1791,7 @@ function render() {
       placeholder.style.minHeight = '';
       placeholder.dataset.id = item.id;
       placeholder.innerHTML =
+        getBookmarkHtml(item.id) +
         '<img class="card-cover" src="' + coverSrc + '" data-gif="' + gifSrc + '" data-static="' + staticSrc + '" data-full="' + (item.cover || '') + '" alt="' + item.title + '" loading="lazy">' +
         '<div class="card-body">' +
           '<div class="card-title">' + titleHtml + '</div>' +
@@ -1530,6 +1840,7 @@ function render() {
 }
 
 function openModal(item) {
+  _currentModalCaseId = item.id;
   document.getElementById('modalGif').src = item.gif || item.cover;
   document.getElementById('modalTitle').textContent = item.title;
   document.getElementById('modalMeta').innerHTML =
@@ -1544,6 +1855,11 @@ function openModal(item) {
     item.style.map(function(t) { return '<span class="card-tag style">' + t + '</span>'; }).join('') +
     (item.occasion && item.occasion.length ? item.occasion.map(function(t) { return '<span class="card-tag occasion">' + t + '</span>'; }).join('') : '');
   document.getElementById('modalTags').innerHTML = tagsHtml;
+
+  var mc = document.getElementById('modalCollect');
+  var isSaved = _savedMap.hasOwnProperty(String(item.id));
+  mc.querySelector('span').textContent = isSaved ? '已收藏' : '收藏';
+  mc.classList.toggle('is-saved', isSaved);
 
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -1579,6 +1895,523 @@ function closeLongformModal() {
   document.getElementById('longformOverlay').classList.remove('open');
   document.body.style.overflow = 'auto';
 }
+
+/* ===== FIREBASE AUTH & COLLECTION ===== */
+
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(function() { t.classList.remove('show'); }, 2200);
+}
+
+/* --- Auth UI --- */
+function showAuthModal() {
+  _authMode = 'login';
+  updateAuthUI();
+  document.getElementById('authEmail').value = '';
+  document.getElementById('authPassword').value = '';
+  document.getElementById('authError').style.display = 'none';
+  document.getElementById('authOverlay').classList.add('open');
+}
+
+function closeAuthModal() {
+  document.getElementById('authOverlay').classList.remove('open');
+}
+
+function toggleAuthMode() {
+  _authMode = _authMode === 'login' ? 'signup' : 'login';
+  updateAuthUI();
+}
+
+function updateAuthUI() {
+  var isLogin = _authMode === 'login';
+  document.getElementById('authTitle').textContent = isLogin ? '登录' : '注册';
+  document.getElementById('authSubtitle').textContent = isLogin ? '登录后即可收藏案例到看板' : '创建账号，开始收藏你喜欢的案例';
+  document.getElementById('authSubmit').textContent = isLogin ? '登录' : '注册';
+  document.getElementById('authSwitch').innerHTML = isLogin
+    ? '还没有账号？<a onclick="toggleAuthMode()">注册</a>'
+    : '已有账号？<a onclick="toggleAuthMode()">登录</a>';
+  document.getElementById('authError').style.display = 'none';
+}
+
+function handleAuth() {
+  var email = document.getElementById('authEmail').value.trim();
+  var pwd = document.getElementById('authPassword').value;
+  var btn = document.getElementById('authSubmit');
+  var errEl = document.getElementById('authError');
+  if (!email || !pwd) { errEl.textContent = '请填写邮箱和密码'; errEl.style.display = 'block'; return; }
+  if (pwd.length < 6) { errEl.textContent = '密码至少6位'; errEl.style.display = 'block'; return; }
+  btn.disabled = true;
+  var promise = _authMode === 'login'
+    ? auth.signInWithEmailAndPassword(email, pwd)
+    : auth.createUserWithEmailAndPassword(email, pwd);
+  promise.then(function() {
+    closeAuthModal();
+    showToast(_authMode === 'login' ? '登录成功' : '注册成功');
+  }).catch(function(err) {
+    var msg = '操作失败';
+    if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password' || err.code === 'auth/invalid-credential') msg = '邮箱或密码错误';
+    else if (err.code === 'auth/email-already-in-use') msg = '该邮箱已注册';
+    else if (err.code === 'auth/invalid-email') msg = '邮箱格式不正确';
+    else if (err.code === 'auth/weak-password') msg = '密码太简单，至少6位';
+    errEl.textContent = msg;
+    errEl.style.display = 'block';
+  }).finally(function() { btn.disabled = false; });
+}
+
+function handleLogout() {
+  auth.signOut().then(function() {
+    showToast('已退出登录');
+    closeUserMenu();
+  });
+}
+
+function closeUserMenu() {
+  var menu = document.querySelector('.user-menu');
+  if (menu) menu.classList.remove('open');
+}
+
+function updateAuthArea(user) {
+  var area = document.getElementById('authArea');
+  if (user) {
+    var initial = (user.email || '?')[0].toUpperCase();
+    area.innerHTML =
+      '<button class="user-avatar" id="userAvatar" onclick="toggleUserMenu()">' + initial +
+      '<div class="user-menu" id="userMenu">' +
+        '<div class="user-menu-item" style="color:var(--text-dim);cursor:default;font-size:12px;">' + user.email + '</div>' +
+        '<button class="user-menu-item" onclick="goToCollection()">我的收藏</button>' +
+        '<button class="user-menu-item" onclick="handleLogout()">退出登录</button>' +
+      '</div></button>';
+  } else {
+    area.innerHTML =
+      '<button class="user-auth-btn" onclick="showAuthModal()">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>' +
+        '登录</button>';
+  }
+}
+
+function toggleUserMenu() {
+  var menu = document.getElementById('userMenu');
+  if (menu) menu.classList.toggle('open');
+}
+
+function goToCollection() {
+  closeUserMenu();
+  document.querySelectorAll('.seg-btn').forEach(function(b) {
+    b.classList.toggle('is-active', b.dataset.view === 'collection');
+  });
+  updateSlider();
+  switchView('collection');
+}
+
+/* --- Data Loading --- */
+function loadUserData() {
+  if (!_currentUser) return Promise.resolve();
+  var uid = _currentUser.uid;
+  return Promise.all([
+    db.collection('users').doc(uid).collection('boards').orderBy('createdAt').get(),
+    db.collection('users').doc(uid).collection('saved').get()
+  ]).then(function(results) {
+    _boards = [];
+    results[0].forEach(function(doc) {
+      var d = doc.data();
+      _boards.push({ id: doc.id, name: d.name, caseIds: d.caseIds || [], createdAt: d.createdAt });
+    });
+    _savedMap = {};
+    results[1].forEach(function(doc) {
+      var d = doc.data();
+      _savedMap[doc.id] = d.boardId;
+    });
+    // Auto-create default board
+    if (_boards.length === 0) {
+      return db.collection('users').doc(uid).collection('boards').add({
+        name: '默认收藏夹',
+        caseIds: [],
+        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+      }).then(function(ref) {
+        _boards.push({ id: ref.id, name: '默认收藏夹', caseIds: [], createdAt: new Date() });
+      });
+    }
+  });
+}
+
+/* --- Bookmark on Cards --- */
+var BOOKMARK_SVG_OUTLINE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
+var BOOKMARK_SVG_FILLED = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
+
+function getBookmarkHtml(caseId) {
+  var isSaved = _savedMap.hasOwnProperty(String(caseId));
+  return '<button class="card-bookmark' + (isSaved ? ' is-saved' : '') + '" data-save-id="' + caseId + '" onclick="handleBookmarkClick(event,' + caseId + ')">' +
+    (isSaved ? BOOKMARK_SVG_FILLED : BOOKMARK_SVG_OUTLINE) + '</button>';
+}
+
+function handleBookmarkClick(e, caseId) {
+  e.stopPropagation();
+  e.preventDefault();
+  if (!_currentUser) {
+    _pendingSave = caseId;
+    showAuthModal();
+    return;
+  }
+  var sid = String(caseId);
+  if (_savedMap.hasOwnProperty(sid)) {
+    unsaveCase(caseId);
+  } else {
+    if (_boards.length === 1) {
+      saveCase(caseId, _boards[0].id);
+    } else {
+      showBoardPopup(e.currentTarget, caseId);
+    }
+  }
+}
+
+/* --- Save / Unsave --- */
+function saveCase(caseId, boardId) {
+  var uid = _currentUser.uid;
+  var sid = String(caseId);
+  var batch = db.batch();
+  batch.set(db.collection('users').doc(uid).collection('saved').doc(sid), {
+    boardId: boardId,
+    savedAt: firebase.firestore.FieldValue.serverTimestamp()
+  });
+  batch.update(db.collection('users').doc(uid).collection('boards').doc(boardId), {
+    caseIds: firebase.firestore.FieldValue.arrayUnion(caseId),
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  });
+  batch.commit().then(function() {
+    _savedMap[sid] = boardId;
+    // Update board local cache
+    for (var i = 0; i < _boards.length; i++) {
+      if (_boards[i].id === boardId) {
+        if (_boards[i].caseIds.indexOf(caseId) === -1) _boards[i].caseIds.push(caseId);
+        break;
+      }
+    }
+    updateBookmarkUI(caseId, true);
+    var boardName = '';
+    for (var j = 0; j < _boards.length; j++) { if (_boards[j].id === boardId) { boardName = _boards[j].name; break; } }
+    showToast('已收藏到「' + boardName + '」');
+    closeBoardPopup();
+  });
+}
+
+function unsaveCase(caseId) {
+  var uid = _currentUser.uid;
+  var sid = String(caseId);
+  var boardId = _savedMap[sid];
+  if (!boardId) return;
+  var batch = db.batch();
+  batch.delete(db.collection('users').doc(uid).collection('saved').doc(sid));
+  batch.update(db.collection('users').doc(uid).collection('boards').doc(boardId), {
+    caseIds: firebase.firestore.FieldValue.arrayRemove(caseId),
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  });
+  batch.commit().then(function() {
+    delete _savedMap[sid];
+    for (var i = 0; i < _boards.length; i++) {
+      if (_boards[i].id === boardId) {
+        var idx = _boards[i].caseIds.indexOf(caseId);
+        if (idx > -1) _boards[i].caseIds.splice(idx, 1);
+        break;
+      }
+    }
+    updateBookmarkUI(caseId, false);
+    showToast('已取消收藏');
+  });
+}
+
+function updateBookmarkUI(caseId, saved) {
+  document.querySelectorAll('[data-save-id="' + caseId + '"]').forEach(function(btn) {
+    if (saved) {
+      btn.classList.add('is-saved');
+      btn.innerHTML = BOOKMARK_SVG_FILLED;
+    } else {
+      btn.classList.remove('is-saved');
+      btn.innerHTML = BOOKMARK_SVG_OUTLINE;
+    }
+  });
+  // Update modal button if open
+  var mc = document.getElementById('modalCollect');
+  if (mc && _currentModalCaseId === caseId) {
+    mc.querySelector('span').textContent = saved ? '已收藏' : '收藏';
+    mc.classList.toggle('is-saved', saved);
+  }
+}
+
+/* --- Modal Collect --- */
+function handleModalCollect() {
+  if (!_currentModalCaseId) return;
+  if (!_currentUser) {
+    _pendingSave = _currentModalCaseId;
+    showAuthModal();
+    return;
+  }
+  var sid = String(_currentModalCaseId);
+  if (_savedMap.hasOwnProperty(sid)) {
+    unsaveCase(_currentModalCaseId);
+  } else {
+    var btn = document.getElementById('modalCollect');
+    showBoardPopup(btn, _currentModalCaseId);
+  }
+}
+
+/* --- Board Popup --- */
+function showBoardPopup(anchor, caseId) {
+  _boardPopupCaseId = caseId;
+  var popup = document.getElementById('boardPopup');
+  var list = document.getElementById('boardPopupList');
+  var sid = String(caseId);
+  var html = '';
+  _boards.forEach(function(b) {
+    var isIn = b.caseIds.indexOf(caseId) > -1;
+    html += '<div class="board-popup-item' + (isIn ? ' active' : '') + '" onclick="selectBoard(\'' + b.id + '\')">' +
+      '<span class="check">' + (isIn ? '✓' : '') + '</span>' + b.name +
+      ' <span style="color:var(--text-dim);font-size:11px;margin-left:auto;">' + b.caseIds.length + '</span></div>';
+  });
+  list.innerHTML = html;
+  document.getElementById('boardNewName').value = '';
+  popup.classList.add('open');
+
+  // Position near anchor
+  var rect = anchor.getBoundingClientRect();
+  popup.style.top = Math.min(rect.bottom + 8, window.innerHeight - 300) + 'px';
+  popup.style.left = Math.min(rect.left, window.innerWidth - 290) + 'px';
+}
+
+function closeBoardPopup() {
+  document.getElementById('boardPopup').classList.remove('open');
+  _boardPopupCaseId = null;
+}
+
+function selectBoard(boardId) {
+  if (!_boardPopupCaseId) return;
+  saveCase(_boardPopupCaseId, boardId);
+}
+
+function createBoardFromPopup() {
+  var name = document.getElementById('boardNewName').value.trim();
+  if (!name || !_currentUser) return;
+  var uid = _currentUser.uid;
+  db.collection('users').doc(uid).collection('boards').add({
+    name: name,
+    caseIds: [],
+    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  }).then(function(ref) {
+    _boards.push({ id: ref.id, name: name, caseIds: [], createdAt: new Date() });
+    showToast('看板「' + name + '」已创建');
+    if (_boardPopupCaseId) {
+      saveCase(_boardPopupCaseId, ref.id);
+    } else {
+      closeBoardPopup();
+      if (currentView === 'collection') renderCollectionView();
+    }
+  });
+}
+
+// Close auth overlay on outside click
+document.getElementById('authOverlay').addEventListener('click', function(e) {
+  if (e.target === e.currentTarget) closeAuthModal();
+});
+
+// Auth input Enter key
+document.getElementById('authPassword').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') handleAuth();
+});
+
+// Close popup on outside click
+document.addEventListener('click', function(e) {
+  var popup = document.getElementById('boardPopup');
+  if (popup.classList.contains('open') && !popup.contains(e.target) && !e.target.closest('[data-save-id]') && e.target.id !== 'modalCollect') {
+    closeBoardPopup();
+  }
+  // Close user menu
+  var avatar = document.getElementById('userAvatar');
+  if (avatar && !avatar.contains(e.target)) closeUserMenu();
+});
+
+/* --- Collection View --- */
+function renderCollectionView() {
+  var container = document.getElementById('collectionView');
+  if (!_currentUser) {
+    container.innerHTML =
+      '<div class="collection-empty">' +
+        '<div class="collection-empty-icon">📑</div>' +
+        '<div class="collection-empty-text">登录后查看你的收藏</div>' +
+        '<button class="collection-login-btn" onclick="showAuthModal()">登录 / 注册</button>' +
+      '</div>';
+    return;
+  }
+
+  if (_viewingBoardId) {
+    renderBoardDetail();
+    return;
+  }
+
+  var html = '<div class="collection-header"><div class="collection-title">我的收藏</div></div>';
+  html += '<div class="board-grid">';
+  _boards.forEach(function(b) {
+    var coverSrc = '';
+    if (b.caseIds.length > 0) {
+      for (var i = 0; i < CASES.length; i++) {
+        if (CASES[i].id === b.caseIds[0]) {
+          coverSrc = CASES[i].coverThumb || CASES[i].cover || '';
+          break;
+        }
+      }
+    }
+    html += '<div class="board-card" onclick="openBoard(\'' + b.id + '\')">' +
+      (coverSrc ? '<img class="board-card-cover" src="' + coverSrc + '">' : '<div class="board-card-cover" style="background:var(--tag-bg);display:flex;align-items:center;justify-content:center;color:var(--text-dim);font-size:24px;">📁</div>') +
+      '<div class="board-card-actions">' +
+        '<button class="board-action-btn" onclick="event.stopPropagation();renameBoard(\'' + b.id + '\')" title="重命名">✎</button>' +
+        '<button class="board-action-btn" onclick="event.stopPropagation();deleteBoard(\'' + b.id + '\')" title="删除">✕</button>' +
+      '</div>' +
+      '<div class="board-card-body">' +
+        '<div class="board-card-name">' + b.name + '</div>' +
+        '<div class="board-card-count">' + b.caseIds.length + ' 个案例</div>' +
+      '</div></div>';
+  });
+  html += '<div class="board-card board-card-new" onclick="promptCreateBoard()">' +
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
+    '<span style="font-size:13px;">新建看板</span></div>';
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function openBoard(boardId) {
+  _viewingBoardId = boardId;
+  renderBoardDetail();
+}
+
+function renderBoardDetail() {
+  var container = document.getElementById('collectionView');
+  var board = null;
+  for (var i = 0; i < _boards.length; i++) { if (_boards[i].id === _viewingBoardId) { board = _boards[i]; break; } }
+  if (!board) { _viewingBoardId = null; renderCollectionView(); return; }
+
+  var cases = [];
+  board.caseIds.forEach(function(cid) {
+    for (var j = 0; j < CASES.length; j++) {
+      if (CASES[j].id === cid) { cases.push(CASES[j]); break; }
+    }
+  });
+
+  var html = '<div class="collection-header">' +
+    '<button class="collection-back" onclick="_viewingBoardId=null;renderCollectionView();">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>' +
+    '</button>' +
+    '<div class="collection-title">' + board.name + ' <span style="font-size:14px;color:var(--text-dim);font-weight:400;">' + cases.length + '个案例</span></div>' +
+  '</div>';
+
+  if (cases.length === 0) {
+    html += '<div class="collection-empty"><div class="collection-empty-text">这个看板还没有案例</div></div>';
+  } else {
+    html += '<div class="grid" style="max-width:none;margin:0;padding:0;">';
+    cases.forEach(function(item) {
+      var coverSrc = item.coverThumb || item.cover || '';
+      var tagHtml =
+        item.industry.map(function(t) { return '<span class="card-tag industry">' + t + '</span>'; }).join('') +
+        item.effect.map(function(t) { return '<span class="card-tag effect">' + t + '</span>'; }).join('');
+      html += '<div class="card" onclick="openModal(CASES.filter(function(c){return c.id===' + item.id + '})[0])">' +
+        getBookmarkHtml(item.id) +
+        '<img class="card-cover" src="' + coverSrc + '" alt="' + item.title + '" loading="lazy">' +
+        '<div class="card-body">' +
+          '<div class="card-title">' + item.title + '</div>' +
+          '<div class="card-account">' + item.account + '</div>' +
+          '<div class="card-tags">' + tagHtml + '</div>' +
+        '</div></div>';
+    });
+    html += '</div>';
+  }
+  container.innerHTML = html;
+}
+
+function promptCreateBoard() {
+  var name = prompt('输入看板名称：');
+  if (!name || !name.trim() || !_currentUser) return;
+  var uid = _currentUser.uid;
+  db.collection('users').doc(uid).collection('boards').add({
+    name: name.trim(),
+    caseIds: [],
+    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  }).then(function(ref) {
+    _boards.push({ id: ref.id, name: name.trim(), caseIds: [], createdAt: new Date() });
+    showToast('看板「' + name.trim() + '」已创建');
+    renderCollectionView();
+  });
+}
+
+function renameBoard(boardId) {
+  var board = null;
+  for (var i = 0; i < _boards.length; i++) { if (_boards[i].id === boardId) { board = _boards[i]; break; } }
+  if (!board) return;
+  var name = prompt('重命名看板：', board.name);
+  if (!name || !name.trim() || name.trim() === board.name) return;
+  var uid = _currentUser.uid;
+  db.collection('users').doc(uid).collection('boards').doc(boardId).update({ name: name.trim() })
+    .then(function() {
+      board.name = name.trim();
+      showToast('已重命名');
+      renderCollectionView();
+    });
+}
+
+function deleteBoard(boardId) {
+  var board = null;
+  for (var i = 0; i < _boards.length; i++) { if (_boards[i].id === boardId) { board = _boards[i]; break; } }
+  if (!board) return;
+  if (!confirm('确定删除看板「' + board.name + '」？案例将从该看板移除。')) return;
+  var uid = _currentUser.uid;
+  var batch = db.batch();
+  batch.delete(db.collection('users').doc(uid).collection('boards').doc(boardId));
+  // Remove saved entries for this board
+  board.caseIds.forEach(function(cid) {
+    var sid = String(cid);
+    if (_savedMap[sid] === boardId) {
+      batch.delete(db.collection('users').doc(uid).collection('saved').doc(sid));
+    }
+  });
+  batch.commit().then(function() {
+    board.caseIds.forEach(function(cid) {
+      var sid = String(cid);
+      if (_savedMap[sid] === boardId) {
+        delete _savedMap[sid];
+        updateBookmarkUI(cid, false);
+      }
+    });
+    _boards = _boards.filter(function(b) { return b.id !== boardId; });
+    showToast('看板已删除');
+    if (_viewingBoardId === boardId) _viewingBoardId = null;
+    renderCollectionView();
+  });
+}
+
+/* --- Auth State Listener --- */
+auth.onAuthStateChanged(function(user) {
+  _currentUser = user;
+  updateAuthArea(user);
+  if (user) {
+    loadUserData().then(function() {
+      // Re-render if currently showing cards to update bookmark states
+      if (currentView === 'svg') render();
+      else if (currentView === 'collection') renderCollectionView();
+      // Handle pending save from before login
+      if (_pendingSave) {
+        var cid = _pendingSave;
+        _pendingSave = null;
+        if (_boards.length > 0) saveCase(cid, _boards[0].id);
+      }
+    });
+  } else {
+    _savedMap = {};
+    _boards = [];
+    if (currentView === 'svg') render();
+    else if (currentView === 'collection') renderCollectionView();
+  }
+});
 
 init();
 </script>
