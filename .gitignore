@@ -1,0 +1,22 @@
+# 系统文件
+.DS_Store
+
+# 临时/工具文件（不需要发布）
+_frames/
+*.py
+*.xlsx
+*.command
+*.mp4
+data/
+werss_data/
+wewerss_data/
+promo/
+promo-video/
+录屏/
+hero-demo.html
+cases.json
+data.json
+run_monitor.sh
+
+# Claude配置
+.claude/
