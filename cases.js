@@ -3242,5 +3242,478 @@ var CASES = [
     "longform": "截图/115_霸王茶姬宠物/00_长图裁切_web.jpg",
     "longformShow": true,
     "semanticKeywords": "霸王茶姬 CHAGEE 伯牙绝弦 宠物 友好 萌宠 猫 狗 主题杯 PET FRIENDLY"
+  },
+  {
+    "id": 115,
+    "title": "SVG 抓 马 马 马 马 马 马 游 乐 园",
+    "url": "https://mp.weixin.qq.com/s/mN3WCU2C1l09ISKtJ_b0UA",
+    "account": "E2平台",
+    "developer": "JZ（计育韬）",
+    "effect": [
+      "小游戏"
+    ],
+    "style": [
+      "3D渲染"
+    ],
+    "industry": [
+      "互联网"
+    ],
+    "review": "以毛绒质感的「幸运游戏机」为核心视觉，整篇文章集合了娃娃机、扭蛋机、黄金矿工、许愿池、敲木鱼等多款互动小游戏。每个模块通过点击触发抓取、挖矿、投币等动作反馈，配合伸长结构依次展开新玩法。本作基于E2编辑器的「娃娃机游戏」「扭蛋机」「黄金矿工游戏」「许愿池游戏」「敲木鱼」等组件搭建，是一座浓缩在公众号里的新年游乐园。",
+    "cover": "截图/115_SVG抓马/01_顶部初始.png",
+    "coverThumb": "截图/115_SVG抓马/01_顶部初始_thumb.jpg",
+    "gif": "截图/115_SVG抓马/交互效果.gif",
+    "publishDate": "2026-02-03",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "春节"
+    ],
+    "longform": "截图/115_SVG抓马/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "游乐园 娃娃机 扭蛋机 黄金矿工 许愿池 敲木鱼 小游戏 新年 毛绒 可爱 抽奖 互动 趣味 马年"
+  },
+  {
+    "id": 116,
+    "title": "电 子 SVG 刮 刮 刮 刮 刮 刮 乐",
+    "url": "https://mp.weixin.qq.com/s/aAOIW5rqz2N9v6j2aP6vpA",
+    "account": "E2平台",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "刮刮卡"
+    ],
+    "style": [
+      "国风"
+    ],
+    "industry": [
+      "互联网"
+    ],
+    "review": "浓烈的中国红配金色祥云纹样铺满画面，以「超吉马力」为主题打造春节刮刮乐体验。每屏设置一张红色覆盖层，点击即触发从左至右或从右至左的擦除动画，露出隐藏的新年祝福图案。本作基于E2编辑器的「单图擦除」组件搭建，全篇布满刮卡互动，配合烟花、灯笼等国风元素烘托年味氛围，像一张展开在手机里的新春福卡。",
+    "cover": "截图/116_E2刮刮乐/01_顶部初始.png",
+    "coverThumb": "截图/116_E2刮刮乐/01_顶部初始_thumb.jpg",
+    "gif": "截图/116_E2刮刮乐/交互效果.gif",
+    "publishDate": "2026-02-09",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "春节"
+    ],
+    "longform": "截图/116_E2刮刮乐/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "刮刮乐 刮刮卡 擦除 红色 新年 马年 国风 祥云 灯笼 烟花 春节 互动 幸运 福利 抽奖"
+  },
+  {
+    "id": 117,
+    "title": "万千姿态，皆是「她」力量",
+    "url": "https://mp.weixin.qq.com/s/AzQyZXyl3Twlt7T-NF8Jdw",
+    "account": "申之能",
+    "developer": "未署名",
+    "effect": [
+      "标签抽拉"
+    ],
+    "style": [
+      "手绘插画"
+    ],
+    "industry": [
+      "政务媒体"
+    ],
+    "review": "以柔和的粉绿色调搭配流畅线描插画呈现女性力量的多元面貌。画面右侧露出一枚精致标签，触碰即抽拉出一整屏画面——专注力、行动力、创造力，每组主题对应一张完整的插画长图，在抽出与收回之间切换不同篇章。touchstart驱动的水平抽拉手感流畅，郁金香与线描女性剪影在粉绿色块间自然流转，温暖而不说教地诠释了三八节的致敬主题。",
+    "cover": "截图/117_申之能她力量/01_顶部初始.png",
+    "coverThumb": "截图/117_申之能她力量/01_顶部初始_thumb.jpg",
+    "gif": "截图/117_申之能她力量/交互效果.gif",
+    "publishDate": "2026-03-08",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "三八妇女节"
+    ],
+    "longform": "截图/117_申之能她力量/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "她力量 女性 妇女节 三八 插画 线描 粉色 郁金香 专注力 行动力 温暖 致敬 能源 国企"
+  },
+  {
+    "id": 118,
+    "title": "工作总会一件件件件件做完的",
+    "url": "https://mp.weixin.qq.com/s/684Hnr6_bzvxutJcMVD_Pw",
+    "account": "意符创意",
+    "developer": "意符（ifsvg）",
+    "effect": [
+      "双击切换",
+      "APP拟态"
+    ],
+    "style": [
+      "极简"
+    ],
+    "industry": [
+      "杂志新媒体"
+    ],
+    "review": "模拟macOS桌面的文件夹图标排成阶梯阵列，以dblclick双击事件还原真实的桌面操作体验——单击展开预览，双击收起折叠，配合translate位移模拟文件夹归位动画。大量foreignObject承载图文混排版式，将品牌内容包装成一次桌面整理体验。双击触发在微信SVG中极为少见，是对SMIL事件类型的巧妙拓展。",
+    "cover": "截图/118_意符创意工作件/01_顶部初始.png",
+    "coverThumb": "截图/118_意符创意工作件/01_顶部初始_thumb.jpg",
+    "gif": "截图/118_意符创意工作件/交互效果.gif",
+    "publishDate": "2024-10-17",
+    "collectDate": "2026-03-24",
+    "occasion": [],
+    "longform": "截图/118_意符创意工作件/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "工作 打工人 文件夹 桌面 macOS 拟态 双击 dblclick 办公 治愈 趣味 意符 创意 职场"
+  },
+  {
+    "id": 119,
+    "title": "早象好，来和小象猜个拳！",
+    "url": "https://mp.weixin.qq.com/s/2bPMe3ODa9KxExQ7k48JNw",
+    "account": "霸王茶姬CHAGEE",
+    "developer": "早象（SZN）",
+    "effect": [
+      "小游戏"
+    ],
+    "style": [
+      "3D渲染",
+      "IP"
+    ],
+    "industry": [
+      "食品饮料"
+    ],
+    "review": "霸王茶姬IP毛绒小象化身猜拳对手，在清新草地与蓝天背景下展开一场石头剪刀布互动。点击选择手势后触发animateTransform位移揭晓胜负，touchmove配合滑动操作丰富了游戏手感。3D渲染的毛绒小象质感细腻，喝奶茶、站在茶园山坡等场景将品牌元素自然融入游戏叙事，以茶会友券的活动设计让互动玩法与营销转化一气呵成。",
+    "cover": "截图/119_霸王茶姬猜拳/01_顶部初始.png",
+    "coverThumb": "截图/119_霸王茶姬猜拳/01_顶部初始_thumb.jpg",
+    "gif": "截图/119_霸王茶姬猜拳/交互效果.gif",
+    "publishDate": "2026-03-11",
+    "collectDate": "2026-03-24",
+    "occasion": [],
+    "longform": "截图/119_霸王茶姬猜拳/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "猜拳 石头剪刀布 小象 霸王茶姬 CHAGEE 茶饮 毛绒 IP 可爱 互动 游戏 奶茶 会友券 清新"
+  },
+  {
+    "id": 120,
+    "title": "横扫班味，做回自己",
+    "url": "https://mp.weixin.qq.com/s/MJQndhlplvZLwOqhiVvhmA",
+    "account": "意符创意",
+    "developer": "意符（ezDrop/ifsvg）",
+    "effect": [
+      "反复切换"
+    ],
+    "style": [
+      "扁平插画"
+    ],
+    "industry": [
+      "杂志新媒体"
+    ],
+    "review": "深色夜空为底，一组拟物化的日夜切换开关沿画面纵向排列——胶囊形开关内是深蓝夜空与黄色弯月，触碰翻转为蓝天白云。mouseover与mouseout配对驱动反复切换，多组开关错开延时依次翻转形成波浪效果。月饼元素穿插其间，以「横扫班味」的轻松语调将中秋问候与打工人情绪巧妙串联，toggle拟态的手感自然流畅。",
+    "cover": "截图/120_意符横扫班味/01_顶部初始.png",
+    "coverThumb": "截图/120_意符横扫班味/01_顶部初始_thumb.jpg",
+    "gif": "截图/120_意符横扫班味/交互效果.gif",
+    "publishDate": "2024-09-14",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "中秋节"
+    ],
+    "longform": "截图/120_意符横扫班味/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "中秋 月饼 班味 打工人 开关 toggle 日夜 月亮 深色 治愈 意符 反复切换 mouseover 拟物 职场"
+  },
+  {
+    "id": 121,
+    "title": "人生建议：旅行前做一次\"汽\"合度大挑战",
+    "url": "https://mp.weixin.qq.com/s/XJwapvphIPOxQ0xO7pAxVw",
+    "account": "可口可乐",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "答题"
+    ],
+    "style": [
+      "扁平插画"
+    ],
+    "industry": [
+      "食品饮料"
+    ],
+    "review": "经典可口可乐红为主视觉，扁平插画风格的手势图案引导读者进入旅行场景测试。每道题以三选一切换呈现——点击YES或OR揭晓匹配结果，animateTransform驱动的位移过渡让选项翻转流畅自然。本作基于E2编辑器的「三选一切换」「无缝图」等组件搭建，将品牌汽合度概念巧妙融入国庆出游话题，粉色问答卡片与红色底色交映，轻快有趣。",
+    "cover": "截图/123_可口可乐汽合度/01_顶部初始.png",
+    "coverThumb": "截图/123_可口可乐汽合度/01_顶部初始_thumb.jpg",
+    "gif": "截图/123_可口可乐汽合度/交互效果.gif",
+    "publishDate": "2024-09-30",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "国庆节"
+    ],
+    "longform": "截图/123_可口可乐汽合度/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "可口可乐 旅行 汽合度 测试 答题 三选一 红色 插画 国庆 出游 问答 品牌 互动 饮料"
+  },
+  {
+    "id": 122,
+    "title": "超凡自然",
+    "url": "https://mp.weixin.qq.com/s/Vil8l0fm4sTxxym_CaX6iQ",
+    "account": "路易威登",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "3D视差"
+    ],
+    "style": [
+      "品牌活动"
+    ],
+    "industry": [
+      "时尚服饰"
+    ],
+    "review": "以秀场大片与自然森林意象交织，大量运用E2编辑器的「扑克滑动」组件——模特lookbook如扑克牌般层叠展开，指尖左右滑动翻阅。「3D等分容器差速滑动」与perspective透视属性叠加营造出纵深空间感，前景模特与背景绿植形成视差层次。浮层与视频号跳转组件丰富了交互入口，整篇克制而奢华，与品牌调性高度统一。",
+    "cover": "截图/124_路易威登超凡自然/01_顶部初始.png",
+    "coverThumb": "截图/124_路易威登超凡自然/01_顶部初始_thumb.jpg",
+    "gif": "截图/124_路易威登超凡自然/交互效果.gif",
+    "publishDate": "2026-03-15",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "新品发布"
+    ],
+    "longform": "截图/124_路易威登超凡自然/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "路易威登 LV 秀场 自然 森林 模特 时装 奢侈品 扑克滑动 3D 视差 高端 大片 lookbook"
+  },
+  {
+    "id": 123,
+    "title": "玫瑰20丨你爱的这杯，终于回来了。",
+    "url": "https://mp.weixin.qq.com/s/mYQOitd8sBlSGOcpTrd0oQ",
+    "account": "星巴克中国",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "吸附滑动",
+      "轮播",
+      "自动动画"
+    ],
+    "style": [
+      "品牌活动"
+    ],
+    "industry": [
+      "食品饮料"
+    ],
+    "review": "通篇沐浴在玫瑰粉色中，以「你等的这杯浪漫归来」为引，铺陈星巴克玫瑰系列产品全貌。本作基于E2编辑器的「标题固定擦出」「跑马灯」「循环弹跳」「等分容器吸附滑动」「滚动暂停放大」等组件搭建，从标题的逐字擦出到产品图的吸附滑动再到尾部弹跳动效，节奏层层递进。scroll-snap驱动的横向滑动让产品陈列如橱窗般可供浏览，粉色花瓣点缀其间，浪漫氛围一以贯之。",
+    "cover": "截图/126_星巴克玫瑰20/01_顶部初始.png",
+    "coverThumb": "截图/126_星巴克玫瑰20/01_顶部初始_thumb.jpg",
+    "gif": "截图/126_星巴克玫瑰20/交互效果.gif",
+    "publishDate": "2026-03-03",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "新品发布"
+    ],
+    "longform": "截图/126_星巴克玫瑰20/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "星巴克 玫瑰 咖啡 粉色 浪漫 产品 饮品 跑马灯 擦出 弹跳 吸附滑动 轮播 花瓣 回归 春日"
+  },
+  {
+    "id": 124,
+    "title": "共赴热爱丨抖音主播特辑",
+    "url": "https://mp.weixin.qq.com/s/-2iMlASkyyilF3Smcy6txw",
+    "account": "时尚芭莎",
+    "developer": "未署名",
+    "effect": [
+      "伸长套伸长"
+    ],
+    "style": [
+      "摄影"
+    ],
+    "industry": [
+      "杂志新媒体"
+    ],
+    "review": "抖音直播联合时尚芭莎的主播写真特辑，以海岸线为背景，层层点击展开不同主播的时尚大片。每次点击画面向下延展，内部嵌入可横滑浏览的写真相册，手写毛笔字“共赴热爱”贯穿全篇，与蓝天碧海的清透影调相互映衬，逐层揭开的节奏赋予浏览仪式感。",
+    "cover": "截图/127_时尚芭莎抖音/01_顶部初始.png",
+    "coverThumb": "截图/127_时尚芭莎抖音/01_顶部初始_thumb.jpg",
+    "gif": "截图/127_时尚芭莎抖音/交互效果.gif",
+    "publishDate": "2026-03-10",
+    "collectDate": "2026-03-24",
+    "occasion": [],
+    "longform": "截图/127_时尚芭莎抖音/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "抖音直播 主播 时尚芭莎 海边 沙滩 写真 摄影 人物 共赴热爱 时尚大片 联名 海浪 探索"
+  },
+  {
+    "id": 125,
+    "title": "谢谢女尔。",
+    "url": "https://mp.weixin.qq.com/s/o9x3t9HpHfMMGEEbsnM1Tg",
+    "account": "PH北京",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "翻牌"
+    ],
+    "style": [
+      "扁平插画"
+    ],
+    "industry": [
+      "杂志新媒体"
+    ],
+    "review": "三八节特辑以统一的紫色视觉贯穿全篇，开屏3D立体字“女尔”拆解重组极具辨识度。本作基于E2编辑器的「循环翻牌」「跑马灯」组件搭建，左右翻动卡片逐一揭开PH团队女性的工作日常，穿插Social Growth Insider趋势栏目，跑马灯循环滚动丰富画面节奏，在致敬氛围中融入轻盈的阅读体验。",
+    "cover": "截图/128_PH北京谢谢女尔/01_顶部初始.png",
+    "coverThumb": "截图/128_PH北京谢谢女尔/01_顶部初始_thumb.jpg",
+    "gif": "截图/128_PH北京谢谢女尔/交互效果.gif",
+    "publishDate": "2026-03-06",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "三八妇女节"
+    ],
+    "longform": "截图/128_PH北京谢谢女尔/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "妇女节 三八 女性 女尔 紫色 PH北京 团队故事 翻牌 跑马灯 趋势 致敬 社交媒体"
+  },
+  {
+    "id": 126,
+    "title": "哎 朋 友 ↗↘ 蕉 内 新 文 案 来 了",
+    "url": "https://mp.weixin.qq.com/s/YC1kuJ3nulsZ6IN9lJKd5g",
+    "account": "Bananain蕉内",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "吸附滑动"
+    ],
+    "style": [
+      "摄影"
+    ],
+    "industry": [
+      "时尚服饰"
+    ],
+    "review": "蕉内新疆白胖棉溯源企划，以广袤棉田与天山雪景的实景摄影铺陈产地故事，棉农在棉花山上劳作的画面配以中维双语文案，质朴而有力。本作基于E2编辑器的「纵向吸附滑动」「无限图片吸附滑动」「等分容器滑动」等组件搭建，纵向滑动逐段展开产地溯源图文，横滑切换产品卡片，末段门店信息以清爽列表呈现，品牌小人排排站的收尾轻松点题。",
+    "cover": "截图/129_蕉内新文案/01_顶部初始.png",
+    "coverThumb": "截图/129_蕉内新文案/01_顶部初始_thumb.jpg",
+    "gif": "截图/129_蕉内新文案/交互效果.gif",
+    "publishDate": "2026-03-12",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "新品发布"
+    ],
+    "longform": "截图/129_蕉内新文案/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "蕉内 棉花 新疆 棉田 溯源 文案 内衣 门店 天山 白胖棉 品牌故事 吸附滑动 产品"
+  },
+  {
+    "id": 127,
+    "title": "普男3.8满分攻略",
+    "url": "https://mp.weixin.qq.com/s/N51-zACJSW90kgGxLjIIQQ",
+    "account": "智族Lab",
+    "developer": "未署名",
+    "effect": [
+      "答题",
+      "APP拟态"
+    ],
+    "style": [
+      "手绘插画"
+    ],
+    "industry": [
+      "杂志新媒体"
+    ],
+    "review": "以Game Boy掌机为界面框架，将三八节包装为“大型生存副本”，男性视角闯关答题。每一关设置职场中的典型偏见场景——空调温度之争、厕所排队、家务分工，手绘漫画配以选择题，点击揭晓正确选项后弹出“规避指南”与关卡结算（理解度/直男指数/翻车概率），掌机拟态的黄黑像素字体与温暖手绘形成趣味反差。",
+    "cover": "截图/130_智族Lab普男/01_顶部初始.png",
+    "coverThumb": "截图/130_智族Lab普男/01_顶部初始_thumb.jpg",
+    "gif": "截图/130_智族Lab普男/交互效果.gif",
+    "publishDate": "2026-03-08",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "三八妇女节"
+    ],
+    "longform": "截图/130_智族Lab普男/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "妇女节 三八 普男 攻略 答题 Game Boy 掌机 关卡 选择题 直男 翻车 漫画 职场 偏见"
+  },
+  {
+    "id": 128,
+    "title": "你真的懂“她”吗？",
+    "url": "https://mp.weixin.qq.com/s/GyMHE-0nkkzJJMpmdEJuJA",
+    "account": "真龙",
+    "developer": "语图工作室",
+    "effect": [
+      "答题"
+    ],
+    "style": [
+      "IP"
+    ],
+    "industry": [
+      "烟草"
+    ],
+    "review": "三八节企划，以汉字拆解为核心创意——“妇”字里藏着一座山、“姐”是乘风破浪的无价之姐、“她”在笔画间自由生长。龙宝IP担任引导，点击“查看答案”揭开每个字的温情解读，橙黄渐变暖色调搭配手绘拥抱插画，将文字学趣味与节日祝福自然融合。",
+    "cover": "截图/134_真龙懂她吗/01_顶部初始.png",
+    "coverThumb": "截图/134_真龙懂她吗/01_顶部初始_thumb.jpg",
+    "gif": "截图/134_真龙懂她吗/交互效果.gif",
+    "publishDate": "2026-03-08",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "三八妇女节"
+    ],
+    "longform": "截图/134_真龙懂她吗/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "真龙 妇女节 三八 汉字 拆解 妇 姐 她 好 龙宝 IP 答题 点击 女性 温柔"
+  },
+  {
+    "id": 129,
+    "title": "全新升级｜321，马上睡觉",
+    "url": "https://mp.weixin.qq.com/s/fjc_xbhBM5EkcuvA9tw79Q",
+    "account": "好奇",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "伸长套伸长"
+    ],
+    "style": [
+      "产品展示"
+    ],
+    "industry": [
+      "母婴"
+    ],
+    "review": "金色丝绒般的暖光笼罩画面，营造母胎般安睡的奢护氛围。本作基于E2编辑器的「点击伸长」组件三层嵌套搭建，点击后画面柔缓向下展开，三段层层递进依次揭开护臀精华、防漏设计与活动福利，每一次展开像轻轻掀开一层柔软襁褓，节奏舒缓而温柔，末尾嵌入评论互动与视频号跳转，为世界睡眠日营销画上完整句号。",
+    "cover": "截图/135_好奇321睡觉/01_顶部初始.png",
+    "coverThumb": "截图/135_好奇321睡觉/01_顶部初始_thumb.jpg",
+    "gif": "截图/135_好奇321睡觉/交互效果.gif",
+    "publishDate": "2026-03-21",
+    "collectDate": "2026-03-24",
+    "occasion": [
+      "世界睡眠日"
+    ],
+    "longform": "截图/135_好奇321睡觉/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "好奇 纸尿裤 深睡大师 世界睡眠日 母婴 新生儿 产品升级 伸长套伸长 金色"
+  },
+  {
+    "id": 130,
+    "title": "Radar运动鞋：“雷达”捕捉中",
+    "url": "https://mp.weixin.qq.com/s/7h44E69AX1yYaHRaSYJKMA",
+    "account": "Balenciaga",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "3D视差",
+      "吸附滑动"
+    ],
+    "style": [
+      "产品展示"
+    ],
+    "industry": [
+      "奢侈品"
+    ],
+    "review": "冷灰影棚中Radar运动鞋以3D视差徐徐展开，前景鞋体与背景文案以不同速率滑移，营造镜头推拉般的空间层次。本作基于E2编辑器的「视差卡片(纵深自定义)」「等分容器滑动」「非等宽图片滑动」等组件搭建，横向吸附滑动串联多角度产品特写，从鞋头透气网面到鸽尾流线一览无遗，克制的灰白色调与利落大字排版，将运动鞋的工业质感与高级时装气场精准传递。",
+    "cover": "截图/136_Radar运动鞋/01_顶部初始.png",
+    "coverThumb": "截图/136_Radar运动鞋/01_顶部初始_thumb.jpg",
+    "gif": "截图/136_Radar运动鞋/交互效果.gif",
+    "publishDate": "2026-03-17",
+    "collectDate": "2026-03-24",
+    "occasion": [],
+    "longform": "截图/136_Radar运动鞋/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "Balenciaga 巴黎世家 Radar 运动鞋 奢侈品 3D视差 吸附滑动 产品展示"
+  },
+  {
+    "id": 131,
+    "title": "小龙虾「饲养」指南（SVG版）",
+    "url": "https://mp.weixin.qq.com/s/eky2A7PD109nlmrF-J1jTw",
+    "account": "E2平台",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "翻牌",
+      "标签滑动"
+    ],
+    "style": [
+      "手绘插画"
+    ],
+    "industry": [
+      "互联网"
+    ],
+    "review": "以“养虾”为隐喻将爬虫技术化作趣味科普长卷，奶油底色上铅笔线描的小龙虾机器人形象活泼可爱，信息图穿插数据对比与流程图解。本作基于E2编辑器的「单图翻页」「二分栏自定义比例」「等分容器滑动」「置顶框架穿透」等组件搭建，翻牌揭示功能亮点，标签滑动切换不同章节，手绘涂鸦风格削弱技术门槛感，在轻松互动中完成产品价值传递。",
+    "cover": "截图/137_小龙虾饲养指南/01_顶部初始.png",
+    "coverThumb": "截图/137_小龙虾饲养指南/01_顶部初始_thumb.jpg",
+    "gif": "截图/137_小龙虾饲养指南/交互效果.gif",
+    "publishDate": "2026-03-11",
+    "collectDate": "2026-03-24",
+    "occasion": [],
+    "longform": "截图/137_小龙虾饲养指南/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "小龙虾 饲养指南 OpenClaw 爬虫 数据采集 AI 手绘 科普 E2平台 标签滑动 翻牌"
   }
 ];
