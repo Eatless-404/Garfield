@@ -922,7 +922,7 @@
       <p class="hero-slogan">收录公众号 SVG 交互作品，拆解创意与技术</p>
       <div class="hero-search">
         <svg class="hero-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="searchInput" placeholder="多个关键词用空格分隔，如：反诈 悬疑" autocomplete="off">
+        <input type="search" id="searchInput" name="svg-search" placeholder="多个关键词用空格分隔，如：反诈 悬疑" autocomplete="off" role="searchbox">
       </div>
       <div class="hero-tags" id="heroTags">
         <a class="hero-tag" data-effect="一镜到底">一镜到底</a>
@@ -1105,9 +1105,11 @@
     <div class="auth-title" id="authTitle">登录</div>
     <div class="auth-subtitle" id="authSubtitle">登录后即可收藏案例到看板</div>
     <div class="auth-error" id="authError"></div>
-    <input class="auth-input" type="email" id="authEmail" placeholder="邮箱地址" autocomplete="email">
-    <input class="auth-input" type="password" id="authPassword" placeholder="密码" autocomplete="current-password">
-    <button class="auth-btn" id="authSubmit" onclick="handleAuth()">登录</button>
+    <form id="authForm" onsubmit="event.preventDefault();handleAuth();" autocomplete="on">
+      <input class="auth-input" type="email" id="authEmail" placeholder="邮箱地址" autocomplete="username" name="email">
+      <input class="auth-input" type="password" id="authPassword" placeholder="密码" autocomplete="current-password" name="password">
+      <button class="auth-btn" id="authSubmit" type="submit">登录</button>
+    </form>
     <div class="auth-switch" id="authSwitch">
       还没有账号？<a onclick="toggleAuthMode()">注册</a>
     </div>
