@@ -1534,6 +1534,18 @@ function initCarousel() {
 }
 
 function init() {
+  // 强制清空搜索框，防止浏览器自动填充
+  var si = document.getElementById('searchInput');
+  si.value = '';
+  searchQuery = '';
+  // 延迟再清一次，Chrome autofill 有时在 DOMContentLoaded 之后才填入
+  setTimeout(function() {
+    if (si.value !== '') { si.value = ''; searchQuery = ''; render(); }
+  }, 100);
+  setTimeout(function() {
+    if (si.value !== '') { si.value = ''; searchQuery = ''; render(); }
+  }, 500);
+
   render();
   initCarousel();
   updateSlider();
