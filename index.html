@@ -1745,7 +1745,6 @@ function highlightText(text, query) {
 
 /* === Virtual Scroll Render === */
 var _gridObserver = null;
-var _gifObserver = null;
 
 function render() {
   var filtered = sortCases(CASES.filter(matchFilter));
@@ -1756,7 +1755,6 @@ function render() {
 
   // Cleanup previous observers
   if (_gridObserver) { _gridObserver.disconnect(); _gridObserver = null; }
-  if (_gifObserver) { _gifObserver.disconnect(); _gifObserver = null; }
 
   if (filtered.length === 0) {
     grid.innerHTML = '<div class="empty-state"><p>没有找到匹配的案例</p><button onclick="clearAllFilters()">清除筛选</button></div>';
@@ -1824,26 +1822,8 @@ function render() {
         openModal(caseItem);
       });
 
-      // Observe this card for GIF preloading
-      if (_gifObserver && gifSrc) {
-        _gifObserver.observe(placeholder);
-      }
     });
   }, { rootMargin: '200px' });
-
-  // GIF preload observer
-  _gifObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (!entry.isIntersecting) return;
-      var card = entry.target;
-      var img = card.querySelector('.card-cover');
-      if (img && img.dataset.gif && !card.dataset.gifPreloaded) {
-        card.dataset.gifPreloaded = '1';
-        new Image().src = img.dataset.gif;
-      }
-      _gifObserver.unobserve(card);
-    });
-  }, { rootMargin: '300px' });
 
   // Observe all placeholders
   grid.querySelectorAll('.card-placeholder, .card').forEach(function(card) {
