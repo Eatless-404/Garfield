@@ -11988,5 +11988,35 @@ var CASES = [
     "longform": "截图/439_当腾讯的产品/00_长图裁切_web.jpg",
     "longformShow": true,
     "semanticKeywords": "腾讯 小红花 99公益日 公益 视差 3D 花丛 头像 海报 温情 产品 JZ"
+  },
+  {
+    "id": 657,
+    "title": "非遗代表作 | 仪式感拉满，主打一个接地气！端午节可一点都不\"端\"着",
+    "url": "https://mp.weixin.qq.com/s/gXoDG3au4RaA_8kXyo73UA",
+    "account": "泸州老窖1952订阅号",
+    "developer": "E2.COOL编辑器",
+    "effect": [
+      "相对位移",
+      "自动动画"
+    ],
+    "style": [
+      "国风",
+      "产品展示"
+    ],
+    "industry": [
+      "食品饮料"
+    ],
+    "review": "开屏以金色酒瓶、龙首与粽子压住端午主视觉，后续水墨山河串起赛龙舟、挂艾草、包粽子等民俗段落。基于E2.COOL「相对位移」组件，背景向下、龙舟向上反向推进，把非遗仪式感转成一段轻盈的节日漫游。",
+    "cover": "截图/657_端午非遗/01_顶部初始.png",
+    "coverThumb": "截图/657_端午非遗/01_顶部初始_thumb.jpg",
+    "gif": "截图/657_端午非遗/交互效果.gif",
+    "publishDate": "2025-05-31",
+    "collectDate": "2026-06-15",
+    "occasion": [
+      "端午节"
+    ],
+    "longform": "截图/657_端午非遗/00_长图裁切_web.jpg",
+    "longformShow": true,
+    "semanticKeywords": "泸州老窖1952 端午 非遗 龙舟 粽子 艾草 包粽子 划龙舟 国风 水墨 白酒 节日营销"
   }
 ];
